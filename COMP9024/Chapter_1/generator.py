@@ -1,4 +1,5 @@
 # definition of a generator
+# that can obtain all the factors of integer n
 def factor(n):
     
     k = 1
