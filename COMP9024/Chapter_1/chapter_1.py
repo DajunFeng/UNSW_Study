@@ -267,6 +267,97 @@ until an EOFError is raised, and then outputs those lines in reverse order
 (a user can indicate end of input by typing ctrl-D).
 """
 
+done = False
+lines = []
+
+while not done:
+
+    try:
+        line = input("Please enter text with CTRL_D to exit: ")
+        lines.append(line)
+
+    except EOFError:
+        print("Input finished!")
+        for i in range(-1, -len(lines) - 1, -1):
+            print(lines[i])
+        done = True
+
+
+"""
+Question 22
+Write a short Python program that takes two arrays a and b of length n
+storing int values, and returns the dot product of a and b. That is, it returns
+an array c of length n such that c[i] = a[i] · b[i], for i = 0, . . . ,n−1.
+"""
+a = [1, 2, 3, 4, 5]
+b = [6, 7, 8, 9, 10]
+
+def dot_product(a, b):
+
+    product = []
+
+    for i in range(len(a)):
+        product.append(a[i]*b[i])
+
+    return product
+
+
+"""
+Question 23
+Give an example of a Python code fragment that attempts to write an element
+to a list based on an index that may be out of bounds. If that index
+is out of bounds, the program should catch the exception that results, and
+print the following error message:
+“Don’t try buffer overflow attacks in Python!”
+"""
+
+list_23 = [0, 1, 2, 3, 4]
+
+try:
+    a = list_23[6]
+
+except IndexError:
+    print("Don't try buffer overflow attacks in Python!")
+
+
+"""
+Question 24
+Write a short Python function that counts the number of vowels in a given
+character string.
+"""
+
+def count_vowels(string):
+
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+    count = 0
+
+    for char in string:
+        if char in vowels:
+            count += 1
+
+    return count
+
+"""
+Question 25
+Write a short Python function that takes a string s, representing a sentence,
+and returns a copy of the string with all punctuation removed. For example,
+if given the string "Let s try, Mike.", this function would return
+"Lets try Mike".
+"""
+
+def remove_punctuation(ori_string):
+
+    import string
+
+    updated_string = ''
+
+    for char in ori_string:
+        if  char not in set(string.punctuation):
+            updated_string += char
+
+    return updated_string
+
 
 
 
