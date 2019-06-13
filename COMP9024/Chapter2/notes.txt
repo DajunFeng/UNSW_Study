@@ -1,0 +1,128 @@
+"""
+2.1.1
+Good software implementation:
+1. Robustness
+to be capable of handling unexpected inputs that are not explicitly defined for its
+application.
+
+2. Adaptability
+The ability of software to run with minimal change on different hardware and operating
+system platforms
+
+3. Reusability
+The same code should be usable as a component of different systems in various
+applications.
+"""
+
+"""
+2.1.2
+Objective-oriented Design Principle
+--------------- 1. Modularity --------------------
+
+In python, a Module is a collection of closely related functions and classes that
+are defined in a single file of source code.
+using modularity can help with the robustness in terms of testing and debugging.
+In addtion, bugs can be easily traced to a particular component.
+Moreover, it can help with the reusability.
+
+--------------- 2. Abstraction --------------------
+Abstraction is the distill processing of a complex systems to the fundamental parts.
+ADT (Abstract Data Type) can be a mathematical model of a data structure
+specify the data type
+the operations for the data structure
+parameter type
+
+duck typing
+a tradition mechanism of treating abstractions
+No requirments
+No compile time
+No declaration of abstract base classes
+
+Abstract Base Class (ABC)
+Cannot be instantiated  (cannot directly create an instance of that class)
+defines one or more common methods
+can be realised by concrete class that inherit from the ABC
+ABC Module provides formal support for ABCs (even no declaration)
+
+Collections Module
+includes definitions of several common data structures.
+
+-------------- 3. Encapsulation --------------------
+to ensure that the internal details of the implementations of different components of a software system
+
+advantage
+freedom for programmer to maintain the details of a component
+without concerning others can change that
+
+Constraint
+The public interface for the component has to be maintained
+
+Robustness and Adaptability can be obtained
+"""
+
+"""
+2.1.3 Design Patterns
+A solution to software design problem
+
+Pattern
+template for a solution
+can be applied to many different situations
+describe the main elements of a solution in an abstract way
+
+content of the pattern
+a name: identifies the pattern
+a context: describes the scenarios for which this pattern can be applied
+a template: describes how the pattern is applied
+a result: analyses what the pattern produces
+
+"""
+
+"""
+2.2 Software development
+Traditional software development involves 3 phases
+Design - Coding style
+Implementation - Naming convension, Formal documentation
+Testing and Debugging - unit testing
+
+2.2.1 Design
+how to divide working of the program into classes
+- how these classes interact
+- what data each will store
+- what actions each will perform
+
+challenge: How to define classes
+rules of thumb:
+- responsibilities:
+    different actors with action verbs to form the class for the program
+- Independence:
+    define the work for each class to be as independent from the other as possible
+    subdivide responsibilities so that each class has autonomy over aspect from the program
+    Give data to the class having the jurisdiction over the actions
+- Behaviors:
+    define the behaviors for each class so that the consequences of each action will
+    be well understood by other classes.
+    define the method that the class performs
+    set of behaviors for a class are the interface to the class
+
+class with instance variables and methods
+can be key to the design of an object-oriented program
+
+Common tool: CRC card (Class-Responsibility-Collaborator)
+simple index cards that subdivide the work.
+each card can represent a component to become a class
+<responsibility><name of each component><collaborator components>
+iteration process after all actions are assigned to actors
+
+Unified Modeling Language (UML)
+class diagram
+
+2.2.2 Pseudo-Code: to describe algorithm
+mixture of natural language and high-level programming constructures
+for human readers, not computers
+
+
+2.2.3 Coding Style and Documentation
+
+
+
+"""
