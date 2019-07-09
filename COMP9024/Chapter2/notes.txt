@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat May 25 12:08:18 2019
+
+@author: Michael
+"""
+
 """
 2.1.1
 Good software implementation:
@@ -123,6 +130,122 @@ for human readers, not computers
 
 2.2.3 Coding Style and Documentation
 
+-----main principles-----
 
+(1) indentation:
+    4 spaces, rather than tab
+
+(2) identifiers:
+    * Classes:
+        sigular noun
+        the first letter of each word is capitalized
+    * Functions:
+        lowercase verb or sigular noun
+        mutiple words: separated by underscores
+    * individual objects:
+        lowercase noun
+        uppercase data sturcture
+    * constant values:
+        all uppercase nuon
+        separated by underscores
+
+(3) Comments:
+    "#" character: In-line comments
+    triple quotes: multi-line string literals
+
+-----Documentation-----
+
+(1) docstring:
+    triple quotes for the first statement with the body of a function, class or Mod.
+    multiple lines should be separated by blank lines
+    help(x)
+
+
+2.2.4 Testing and Debugging
+
+-----testing-----
+Testing is the process of experimental checking the correctness of a program.
+
+(1) careful testing plan:
+    * essential part of writing a program
+    * verifying all possible inputs is infeasible
+    * executing the program on a representative subset of inputs
+    * at minimum, each method of a class is tested at least once
+    * better, each statement should be test at least once
+
+(2) Special cases: (special inputs)
+    * no length sequence
+    * one element
+    * all same elements
+    * already sorted
+    * reverse sorted
+
+(3) Special structure:
+    * boundary cases
+
+(4) randomly generated inputs V.S. handcrafted test suites:
+    * random module
+
+(5) dependency testing strategies:
+    * top-down:
+        from top to bottom
+        conjunction with stubbing:
+            replace a lower-level component with a stub
+    * bottom-up:
+        from lower-level to higher-level
+        unit testing
+
+(6) Module file auto-testing:
+
+    * if __name__ == '__main__':
+         # perform tests...
+
+    * unittest module
+
+(7) regression testing:
+    previous tests are re-executed to ensure changes to the software do not introduce
+    new bugs
+
+-----debugging-----
+Debugging is the process of tracking the execution of a program and discovering the
+errors in it.
+
+(1) simplest technique: print() statement
+
+(2) a better approach: debugger
+    * a specialized environment for controlling and monitoring the execution of a program
+    * insersion of breakpoints: programs will stop at each breakpoint, then the value
+      can be checked
+    * pdb module: debugging support within the interpreter
+    * IDEs provide debugging environment with graphical user interfaces
+
+"""
+
+"""
+2.3 Class Definitions
+primary means for abstraction
+class is the carrier of instances (object data)
+store the behaviors in member functions (methods)
+blueprint: determine the way that state information for each instance is represented
+in the form of attributes (fields, instance variables, data members)
+
+2.3.1 Example: CreditCard Class (refering to: CreditCard.py)
+
+Identifier:
+    self - each object instance should maintain its own variables
+           for a specific instance, self is a hidden parameter
+           for the class, self is an explicit parameter
+    self._variable - explicit variable assigned from the initial input parameter
+
+Constructor:
+    cc = CreditCard('John Doe', '1st Bank', '5319 0375 9387', '5309', 1000)
+    to create an instance of the class
+    a call of __init__(self, customer, bank, acnt, limit) method
+
+Encapsulation:
+    _variable : nonpublic data member
+    better enforce a consistent state of all instances
+
+Additional methods:
 
 """
