@@ -249,3 +249,69 @@ Encapsulation:
 Additional methods:
 
 """
+"""
+2.3.4 Iterator
+
+provides a key behavior: __next__
+
+"""
+"""
+2.4 Inheritance
+
+In order to organize various structural components of a software package:
+    hierarchical fashion
+
+example: building > House > Ranch
+    House: subset of building
+           superset of Ranch
+    Is relationship
+
+It is useful:
+    general level function: reusable code
+
+mechanism of Object-oriented programming:
+    inheritance (module): allows new class to be defined based upon an existing class
+    existing class: base; parent or super class
+    newly defined class: subclass or child class
+
+Differentiate the subclass
+    overrides: specialize an existing behavior (new implementation)
+
+    extend: new methods
+"""
+
+"""
+2.4.1 Extending the CreditCard Class
+subclass of CreditCard:
+    (1) if an attempted charge is rejected when exceeding the limit, charge $5
+    (2) Annual Percentage Rate
+
+override: existing charge method
+extend: process_month
+
+Protected Members
+underscore name of value: means it is nonpublic member
+general users should not be alowed to access it.
+
+double underscore means the variable is private.
+"""
+"""
+2.4.2 Hierarchy of Numeric Progressions
+(1) numeric progression:
+    a sequence of numbers where each number depends on one or more of the previous numbers
+    arithmetic progression:
+        the next number can be determined by adding a fixed constant to the previous value
+    geometric progression:
+        the next number can be determined by multiplying the previous value by a fixed constant
+    they all need a first value and a way of identifying a new value
+
+(2) code implementation
+    iterator:
+        __next__(self)
+        __iter__(self)
+    all natral positive integers (0, 1, 2, .....)
+    __init__(self, start = 0): the first value is 0
+    _advance(self): advance is adding 1
+    print_progression(self, n):print previous n many elements in the progression
+"""
+
