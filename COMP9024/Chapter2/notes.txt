@@ -315,3 +315,67 @@ double underscore means the variable is private.
     print_progression(self, n):print previous n many elements in the progression
 """
 
+"""
+2.4.3 Abstract Base Class
+
+to avoid repetition of code:
+    design a base class with common functionality
+    other classes can inherited those functions from the base class
+
+ABC (Abstract Base Class):
+    to serve as a base class through inheritance
+    cannot be directly instantiated
+    no strong tradition of defining ABC in Python
+    abc module
+    Template method pattern:
+        collections module can provide ABCs sharing common interfaces with some of
+        Python's built-in data structures
+    collection.Sequence ABC common to Python's list, str and tuple:
+        method: count, index, and __contains__ for others __len__ and __getitem__
+    new definition overrides the inherited one
+"""
+
+"""
+2.5 Namespaces and Object-Orientation
+
+2.5.1 instance and class namespaces
+
+Instance Namespace:
+    manage attributes specific to an individual object
+    e.g.: account number; limit; balance
+Class namespace:
+    manage members(method function) to be shared in the class
+    e.g.: make_payment; __init__; get_customer
+
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
