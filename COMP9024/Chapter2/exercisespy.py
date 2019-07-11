@@ -52,8 +52,3 @@ class Flower:
     def get_price(self):
         return self._price
 
-
-"""
-R-2.5 Use the techniques of Section 1.7 to revise the charge and make_payment methods
-of
-"""
