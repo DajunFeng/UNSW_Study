@@ -60,8 +60,27 @@ def graph_functions():
     plt.figure()
 
 """
-R-3.2:
+R-3.2: The number of operations executed by algorithms A and B is 8nlogn and 2n^2,
+       respectively.
+       Determine n0 such that A is better than B for n >= n0.
 """
+def question_2_function():
+    """ Return the n0 such that A is better than B for n >= n0 """
+
+    not_found = True
+    n0 = 1
+
+    while(not_found):
+        a = 8 * n0 * np.log2(n0)
+        b = 2 * n0 ** 2
+
+        if a == b:
+            not_found = False
+            return n0
+        else:
+            n0 += 1
+            continue
+
 
 
 
