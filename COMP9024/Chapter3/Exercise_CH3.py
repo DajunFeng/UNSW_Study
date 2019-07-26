@@ -80,7 +80,26 @@ def question_2_function():
         else:
             n0 += 1
             continue
+"""
+R-3.3: The number of operations executed by algorithms A and B is 40n^2 and 2n^3,
+       respectively.
+       Determine n0 such that A is better than B for n >= n0
+"""
+def question_3_function():
+    """ Return the n0 such that A is better than B for n >= n0 """
 
+    not_found = True
+    n0 = 1
 
+    res = []
+    while(not_found):
+        a = 40*n0**2
+        b = 2*n0**3
 
+        if a == b:
+            not_found = False
+            return n0
+        else:
+            n0 += 1
+            continue
 
