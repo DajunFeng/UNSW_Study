@@ -1,0 +1,9 @@
+begin with four illustrative examples of the use of recursion
+
+(1) The factorial function: a classic mathematical function that has a natural recursive definition
+
+(2) An English ruler: has a recursive pattern that is a simple example of a fractal structure
+
+(3) Binary search: one of the most important computer algorithms locating a desired value in a data set with upwards of billions of entries
+
+(4) The file system: a recursive structure in which directories can be nested arbitarily deeply within other directories
