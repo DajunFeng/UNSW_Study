@@ -52,3 +52,14 @@ train, test, train_labels, test_labels = train_test_split(features, labels, test
 # Building and Evaluating the model
 
 from sklearn.naive_bayes import GaussianNB
+
+# initialise the classifier
+gnb = GaussianNB()
+
+# train the model
+model = gnb.fit(train, train_labels)
+
+# make predictions
+pred = gnb.predict(test)
+
+print(pred)
