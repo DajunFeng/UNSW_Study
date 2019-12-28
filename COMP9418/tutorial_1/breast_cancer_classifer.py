@@ -63,3 +63,8 @@ model = gnb.fit(train, train_labels)
 pred = gnb.predict(test)
 
 print(pred)
+
+# evaluate the accuracy
+from sklearn.metrics import accuracy_score
+
+print(accuracy_score(train_labels, pred))
