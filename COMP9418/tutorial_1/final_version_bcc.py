@@ -1,14 +1,3 @@
-#-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
-#
-# Author:      Michael
-#
-# Created:     28/12/2019
-# Copyright:   (c) Michael 2019
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
-
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
